@@ -15,25 +15,26 @@ def get_ticket_request(remaining_tickets):
 def main():
     total_tickets = 10
     # Accumulator for tickets sold
-    tickets_sold = 0
+    tickets_purchased = 0
     # Accumulator for number of buyers
-    buyers = 0
+    customers = 0
     # While loop that calculates the amount of tickets remaining and number of buyers
-    while tickets_sold < total_tickets:
-        remaining = total_tickets - tickets_sold
+    while tickets_purchased < total_tickets:
+        remaining = total_tickets - tickets_purchased
         requested = get_ticket_request(remaining)
 
         if requested > 0:
-            tickets_sold += requested
-            buyers += 1
-            print(f"Purchase successful. Tickets remaining: {total_tickets - tickets_sold}\n")
+            tickets_purchased += requested
+            customers += 1
+            print(f"Purchase successful. Tickets remaining: {total_tickets - tickets_purchased}\n")
 
     print("All tickets have been sold!")
-    print(f"Total number of buyers: {buyers}")
+    print(f"Total number of buyers: {customers}")
 
 # Call the main function
 if __name__ == "__main__":
     main()
 
     
+
 
