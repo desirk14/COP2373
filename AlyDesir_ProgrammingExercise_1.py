@@ -13,7 +13,7 @@ def get_ticket_request(remaining_tickets):
 
 # Function to handle the ticket sales process
 def main():
-    total_tickets = 20
+    total_tickets = 10
     # Accumulator for tickets sold
     tickets_sold = 0
     # Accumulator for number of buyers
@@ -34,4 +34,5 @@ def main():
 # Call the main function
 if __name__ == "__main__":
     main()
+
     
