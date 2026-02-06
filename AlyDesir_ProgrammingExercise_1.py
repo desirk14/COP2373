@@ -1,6 +1,6 @@
 # Function to get a valid ticket request
 def get_ticket_request(remaining_tickets):
-    tickets = int(input(f"How many tickets would you like to buy? (1–4, {remaining_tickets} remaining): "))
+    tickets = int(input(f"How many tickets would you like to purchase today? (1–4, {remaining_tickets} remaining): "))
     # If statement to ensure that user input a valid amount of tickets
     if tickets < 1 or tickets > 4:
         print("You can only buy between 1 and 4 tickets.")
@@ -36,3 +36,4 @@ if __name__ == "__main__":
     main()
 
     
+
